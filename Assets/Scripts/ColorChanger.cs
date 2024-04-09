@@ -15,7 +15,7 @@ public class ColorChanger : MonoBehaviour
         _meshRenderer = GetComponent<MeshRenderer>();
     }
 
-    void Start()
+    private void Start()
     {
         _meshRenderer.material.DOColor(_color, _duration).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo); 
     }

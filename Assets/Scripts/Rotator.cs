@@ -10,7 +10,5 @@ public class Rotator : MonoBehaviour
     private void Start()
     {
         transform.DORotate(_angle,_duration, RotateMode.FastBeyond360).SetEase(Ease.Linear).SetLoops(-1,LoopType.Restart);
-        //transform.DOLocalRotate(_angle, _duration).SetLoops(1, _loopType);
-        //transform.DORotate(_angle,_duration).SetLoops(1,_loopType);
     }
 }
