@@ -18,7 +18,6 @@ public class TextChanger : MonoBehaviour
         _text = GetComponent<Text>();
     }
 
-    // Update is called once per frame
     private void Start()
     {
         Sequence sequence = DOTween.Sequence();
